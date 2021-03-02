@@ -6,7 +6,7 @@ int main(void) {
   float b;
   float c;
   printf("digite o valor\n");
-  scanf("%f",&valor);
+  scanf("%f",&valor); //Nunca mais formatar entrada!
   if(valor <= 100.00){ 
     a = valor;
     printf("R$ %.2f\n", valor); 
