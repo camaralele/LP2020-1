@@ -16,7 +16,7 @@ int main(void) {
     c = valor - (valor*0.1);
     printf("R$ %.2f\n", c);
   }else{
-    b = valor - (valor*0.05);
+    b = valor - (valor*0.05); //valor entre 100 e 200
     printf("R$ %.2f\n", b);
     }
   }
