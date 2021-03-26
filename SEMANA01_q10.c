@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 int main(void) {
@@ -107,7 +108,7 @@ switch (dezena){
     break;
   }
 
-  if (dezena !=0) {
+  if (dezena >=10) {
    printf(" e ");
  }
 
@@ -138,3 +139,4 @@ if  (dezena !=1){
   
 return 0;
 }
+*/
