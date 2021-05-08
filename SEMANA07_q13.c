@@ -7,9 +7,12 @@ int main(void) {
       n2,
       n3;
 
-  while (N>0){
+  while (N>=0){
     scanf("%i\n",&N);
-    n1=N;
+    
+    if  (N<0){
+    continue;
+    }
     if (N>n1){
       n2=n1;
       n1=N;
@@ -24,6 +27,7 @@ int main(void) {
         n2=n1;
         n1=N;
     }     
+    n1=N;
   }
    printf("N1 - %i N2 - %i N3 - %i \n",n1, n2, n3);
 
