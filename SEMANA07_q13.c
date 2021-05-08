@@ -1,17 +1,32 @@
-
+/*
 #include <stdio.h>
+
 int main(void) {
-  int valor, x;
-  scanf("%i/n", &valor);
-  for (x = 1; x<= valor; x++){
-    if (x%4==0){
-      printf("PIN");
-    }else{
-    printf("%i",x);
+  int N,
+      n1,
+      n2,
+      n3;
+
+  while (N>0){
+    scanf("%i\n",&N);
+    n1=N;
+    if (N>n1){
+      n2=n1;
+      n1=N;
+   }
+    if (N>n2){
+        n3=n2;
+        n2=n1;
+        n1=N;
     }
-    if (x<valor){
-      printf(",");
-    }
+    if (N>n2 && N>n1){
+        n3=n2;
+        n2=n1;
+        n1=N;
+    }     
   }
+   printf("N1 - %i N2 - %i N3 - %i \n",n1, n2, n3);
+
   return 0;
 }
+*/
