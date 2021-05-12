@@ -3,24 +3,25 @@
 
 int main(void) {
   int x = 1000,
-      xx,x1, x2, x3, x4, x5, resultado;
+      novo, x1, x2, x3, x4, x5;
+  float resultado;
 
   do {
-  scanf("%i/n", &xx);
+  scanf("%i/n", &novo);
 
-  if  (xx<0){
-    continue;
+  if  (novo<0){
+    break;
     } 
+    x5 = x4;
+    x4 = x3;  
+    x3 = x2; 
+    x2 = x1;
+    x1 = novo;
 
+  resultado = (x1+x2+x3+x4+x5)/5.0;
+  printf ("%f \n",resultado);
 
-  x1=xx;
-  x2=xx;
-  x3=xx;
-  x4=xx;
-  x5=xx;
-  resultado = (x1+x2+x3+x4+x5)/5;
-
-  }while (xx>=0);
+  }while (novo>=0);
   
   if  (resultado<=x){
       printf("TURNO TRANQUILO\n");
